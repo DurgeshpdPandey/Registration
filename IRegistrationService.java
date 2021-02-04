@@ -1,6 +1,6 @@
-package com.nacre.demo.serviceI;
+package com.serviceI;
 
-import com.nacre.demo.dto.RegistrationDTO;
+import com.dto.RegistrationDTO;
 
 public interface IRegistrationService {
 	public boolean register(RegistrationDTO registrationDTO);
