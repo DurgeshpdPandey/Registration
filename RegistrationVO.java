@@ -1,12 +1,14 @@
-package com.nacre.demo.vo;
+package com.vo;
 
 public class RegistrationVO {
+//variable definition	
 	private String fname=null;
 	private String lname=null;
 	private String gender=null;
 	private String dob=null;
 	private String age=null;
 	private String per=null;
+//their getter and setter	
 	public String getFname() {
 		return fname;
 	}
