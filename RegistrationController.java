@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.nacre.demo.DelegatesImpl.RegistrationDelegatesImpl;
-import com.nacre.demo.vo.RegistrationVO;
+import com.DelegatesImpl.RegistrationDelegatesImpl;
+import com.vo.RegistrationVO;
 
 /**
  * Servlet implementation class RegistrationController
