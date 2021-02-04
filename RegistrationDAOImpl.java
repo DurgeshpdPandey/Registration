@@ -1,13 +1,13 @@
-package com.nacre.demo.daoImpl;
+package com.daoImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import com.nacre.demo.bo.RegistrationBO;
-import com.nacre.demo.daoI.IRegistrationDAO;
-import com.nacre.demo.util.DBConnection;
-import com.nacre.demo.util.QueryConstants;
+import com.bo.RegistrationBO;
+import com.daoI.IRegistrationDAO;
+import com.util.DBConnection;
+import com.util.QueryConstants;
 
 public class RegistrationDAOImpl implements IRegistrationDAO {
 
