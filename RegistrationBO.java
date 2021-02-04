@@ -1,4 +1,4 @@
-package com.nacre.demo.bo;
+package com.bo;
 
 import java.sql.Date;
 
@@ -11,6 +11,7 @@ public class RegistrationBO {
 		private Date dob=null;
 		private int age=0;
 		private double per=0.0;
+	//getter setter methods of variables
 		public String getFname() {
 			return fname;
 		}
