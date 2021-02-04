@@ -1,4 +1,4 @@
-package com.nacre.demo.util;
+package com.util;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,7 +15,7 @@ public class DBConnection {
 	}
 //creating propsReader method  
 	void propsReader(){
-		String fileName="com/nacre/demo/util/db.properties";
+		String fileName="com/util/db.properties";
 		InputStream inputStream=this.getClass().getClassLoader().getResourceAsStream(fileName);	
 		try {
 			props.load(inputStream);
