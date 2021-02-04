@@ -1,4 +1,4 @@
-package com.nacre.demo.dto;
+package com.dto;
 
 import java.sql.Date;
 
@@ -11,6 +11,7 @@ public class RegistrationDTO {
 	private Date dob=null;
 	private int age=0;
 	private double per=0.0;
+	
 	public String getFname() {
 		return fname;
 	}
