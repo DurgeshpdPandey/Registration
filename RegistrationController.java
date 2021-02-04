@@ -1,4 +1,4 @@
-package com.nacre.demo.controller;
+package com.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,7 +21,7 @@ public class RegistrationController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out=response.getWriter();
-		//creating local variable
+	//creating local variable
 		String fname=null;
 		String lname=null;
 		String age=null;
@@ -32,7 +32,7 @@ public class RegistrationController extends HttpServlet {
 		RegistrationVO registrationVO=null;
 		RegistrationDelegatesImpl registrationDelegatesImpl=null;				
 		
-		//accepting request values from UI
+	//accepting request values from UI
 		fname=request.getParameter("fname");
 		lname=request.getParameter("lname");
 		gender=request.getParameter("gender");
@@ -40,10 +40,10 @@ public class RegistrationController extends HttpServlet {
 		age=request.getParameter("age");
 		per=request.getParameter("per");
 		
-		//creating registrationVO object
+	//creating registrationVO object
 		registrationVO=new RegistrationVO();
 		
-		//setting values 
+	//setting values 
 		registrationVO.setFname(fname);
 		registrationVO.setLname(lname);
 		registrationVO.setAge(age);
@@ -51,11 +51,11 @@ public class RegistrationController extends HttpServlet {
 		registrationVO.setGender(gender);
 		registrationVO.setPer(per);
 		
-		//creating RegistrationDelegatesImpl object and calling parse method
+	//creating RegistrationDelegatesImpl object and calling parse method
 		 registrationDelegatesImpl=new RegistrationDelegatesImpl();
 		 registrationCheck=registrationDelegatesImpl.parse(registrationVO);
 		 
-		 //if parse method of RegistrationDelegatesImpl will true it will give true otherwise false 
+	 //if parse method of RegistrationDelegatesImpl will true it will give true otherwise false 
 		 if(registrationCheck){
 			 out.print("<h1>Successful</h1>");
 		 }else{
