@@ -1,6 +1,6 @@
-package com.nacre.demo.delegatesI;
+package com.delegatesI;
 
-import com.nacre.demo.vo.RegistrationVO;
+import com.vo.RegistrationVO;
 
 public interface IRegistrationDelegates {
 	public boolean parse(RegistrationVO registrationVO);
