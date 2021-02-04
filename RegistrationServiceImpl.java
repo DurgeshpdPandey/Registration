@@ -1,9 +1,9 @@
-package com.nacre.demo.serviceImpl;
+package com.serviceImpl;
 
-import com.nacre.demo.bo.RegistrationBO;
-import com.nacre.demo.daoImpl.RegistrationDAOImpl;
-import com.nacre.demo.dto.RegistrationDTO;
-import com.nacre.demo.serviceI.IRegistrationService;
+import com.bo.RegistrationBO;
+import com.daoImpl.RegistrationDAOImpl;
+import com.dto.RegistrationDTO;
+import com.serviceI.IRegistrationService;
 
 public class RegistrationServiceImpl implements IRegistrationService {
 
